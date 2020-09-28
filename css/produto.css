@@ -1,0 +1,46 @@
+/*Fieldset*/
+.cores {
+    position: relative; 
+    padding-top: 90px;
+}
+.cores legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*Bolinhas*/
+.cores label:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        top: 30px;
+}
+label[for=verde]:after {
+    background-color: #33CC66;
+    left: 0px;
+}
+label[for=rosa]:after {
+    background-color: #FF6666;
+    left: 60px;
+}
+label[for=azul]:after {
+    background-color: #6666FF;
+    left: 120px;
+}
+/*seletor radio*/
+.cores input[type=radio]{
+    display: none;
+}
+/*seletor radio checado + bolinha */
+.cores input:checked + label:after {
+    border: 6px solid rgba(0,0,0,0.3);
+}
+/*seletor radio não checado + bolinhas*/
+.cores input:not(:checked) + label img{
+    display: none;
+}
