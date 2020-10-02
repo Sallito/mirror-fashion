@@ -24,7 +24,9 @@ section,
 summary {
   display: block;
 }
-
+.form-control:invalid{
+  border: 1px solid #cc0000;
+}
 audio,
 canvas,
 video {
